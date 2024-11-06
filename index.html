@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/utils.css">
+    <title>Perfumy</title>
+</head>
+<body>
+    <div style="width: 100%; position: fixed; z-index: 100;">
+        <!-- Banner -->
+        <div class="bg-accent gap-05 py-05 justify-center flex fg-light font-open-sans">
+            <p>Free shipping across UAE | Split your payments into 4 with</p>
+            <img style="height: 1.9rem;" src="/assets/images/tabby-badge.png" alt="tabby-badge">
+        </div>
+
+
+        <!-- Header -->
+        <header>
+            <div class="bg-light">
+                <div class="container flex justify-between py-2 px-3">
+                    <a href="#">
+                        <img src="assets/images/logo.png" height="65" alt="logo">
+                    </a>
+                    <ul id="header-nav-links" class="flex gap-2 font-sans text-md nav-links">
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                        <li><a href="#">TOP SELLERS</a></li>
+                        <li><a href="#">FOR HIM</a></li>
+                        <li><a href="#">FOR HER</a></li>
+                        <li><a href="#">UNISEX</a></li>
+                        <li><a href="#">OUD</a></li>
+                        <li><a href="#">GIFT BOX</a></li>
+                    </ul>
+                    <div class="flex gap-1">
+                        <a class="fg-dark-to-accent font-sans text-md" href="#">Sign In</a>
+                        <button>
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="24" height="24" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-heart">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="24" height="24" 
+                                viewBox="0 0 24 24"
+                                fill="none" 
+                                stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-search">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.3-4.3"/>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="24" height="24" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-shopping-cart">
+                                <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                            </svg>
+                        </button>
+                        <button id="menu-btn">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="24" height="24" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" stroke-width="2" 
+                                stroke-linecap="round" stroke-linejoin="round" 
+                                class="lucide lucide-menu">
+                                <line x1="4" x2="20" y1="12" y2="12"/>
+                                <line x1="4" x2="20" y1="6" y2="6"/>
+                                <line x1="4" x2="20" y1="18" y2="18"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+         <!-- Fullscreen Navigation Menu -->
+        <nav id="nav-menu" class="nav-menu">
+            <ul id="nav-links" class="nav-links font-open-sans">
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="#">TOP SELLERS</a></li>
+                <li><a href="#">FOR HIM</a></li>
+                <li><a href="#">FOR HER</a></li>
+                <li><a href="#">UNISEX</a></li>
+                <li><a href="#">OUD</a></li>
+                <li><a href="#">GIFT BOX</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Hero Section -->
+    <div class="relative h-screen" style="overflow: hidden;">
+        <video class="absolute" style="object-fit: cover;" autoplay loop muted playsinline>
+            <source src="assets/videos/banner-video.webm" type="video/webm" />
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="hero__container" style="padding: 0px 10px;">
+            <h1 class="font-masvis text-center" style="font-size: 50px;">The Perfume Boutique</h1>
+            <p class="font-sans text-lg text-center" style="max-width: 780px;">
+                Experience the allure of designer scents with our crafted perfumes that offer
+                the same captivating aromas to match the originals.
+            </p>
+            <button class="bg-light-to-accent fg-dark-to-light px-3 py-1 rounded text-base">
+                SHOP NOW
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Popular Brands Section -->
+    <div class="container" style="padding: 50px 0px;">
+        <h2 class="font-masvis text-center fg-dark">Popular Brands</h2>
+        <div class="carousel" style="padding: 45px 20px;" data-visible-cards="7">
+            <button 
+                class="carousel__button carousel__button--center carousel__button--left" 
+                onclick="moveLeft(this)">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none"
+                    stroke="currentColor" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-chevron-left">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </button>
+            <div class="carousel__track__container">
+                <div class="carousel__track" id="brands-carousel">
+                </div>
+            </div>
+            <button 
+                class="carousel__button carousel__button--center carousel__button--right" 
+                onclick="moveRight(this)">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-chevron-right">
+                    <path d="m9 18 6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="flex items-center justify-center">
+            <a href="#" class="text-base font-sans text-center semibold fg-accent underline">
+                View All
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Collections Section -->
+    <div class="bg-light w-full">
+        <div class="container" style="padding: 50px 0px;">
+            <h2 class="font-masvis text-center fg-dark">Our Collection</h2>
+            <div class="flex justify-center">
+                <p class="font-sans text-center" style="max-width: 780px;">
+                    Experience the allure of designer scents with our crafted perfumes that 
+                    offer the same captivating aromas to match the originals.
+                </p>
+            </div>
+            <div class="collection__grid" style="margin-top: 50px; margin-bottom: 20px;">
+                <div class="collection__item">
+                    <p class="text-md font-open-sans semibold">For Him</p>
+                </div>
+                <div class="collection__item">
+                    <p class="text-md font-open-sans semibold">For Her</p>
+                </div>
+                <div class="collection__item">
+                    <p class="text-md font-open-sans semibold">Unisex</p>
+                </div>
+                <div class="collection__item">
+                    <p class="text-md font-open-sans semibold">OUD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- New Arrivals Section -->
+    <div class="w-full">
+        <div class="container" style="padding-top: 50px;">
+            <h2 class="font-masvis text-center fg-dark">New Arrivals</h2>
+            <div class="flex justify-center">
+                <p class="font-sans text-center" style="max-width: 780px;">
+                    Experience the allure of designer scents with our crafted perfume
+                </p>
+            </div>
+            <div class="carousel" style="padding: 45px 20px;" data-visible-cards="5">
+                <button 
+                    class="carousel__button carousel__button--offset carousel__button--left" 
+                    onclick="moveLeft(this)">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
+                        stroke="currentColor" stroke-width="2" 
+                        stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-chevron-left">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel__track__container">
+                    <div class="carousel__track" id="arrival-carousel">
+                    </div>
+                </div>
+                <button 
+                    class="carousel__button carousel__button--offset carousel__button--right" 
+                    onclick="moveRight(this)">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" stroke-width="2" 
+                        stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-chevron-right">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex justify-center"style="padding-bottom: 45px;">
+                <button class="bg-accent fg-light px-1 py-1 rounded text-base">
+                    EXPLORE MORE
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Best Sellers Section -->
+    <div class="bg-light w-full">
+        <div class="container" style="padding-top: 50px;">
+            <h2 class="font-masvis text-center fg-dark">Top Sellers</h2>
+            <div class="flex justify-center">
+                <p class="font-sans text-center" style="max-width: 780px;">
+                    Experience the allure of designer scents with our crafted perfume
+                </p>
+            </div>
+            <div class="carousel" style="padding: 45px 20px;" data-visible-cards="5">
+                <button 
+                    class="carousel__button carousel__button--offset carousel__button--left" 
+                    onclick="moveLeft(this)">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
+                        stroke="currentColor" stroke-width="2" 
+                        stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-chevron-left">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel__track__container">
+                    <div class="carousel__track" id="bestsellers-carousel">
+                    </div>
+                </div>
+                <button 
+                    class="carousel__button carousel__button--offset carousel__button--right" 
+                    onclick="moveRight(this)">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" stroke-width="2" 
+                        stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-chevron-right">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex justify-center"style="padding-bottom: 45px;">
+                <button class="bg-accent fg-light px-1 py-1 rounded text-base">
+                    EXPLORE MORE
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Banner 2 -->
+    <div class="relative h-screen" style="overflow: hidden;">
+        <video class="absolute w-full" autoplay loop muted playsinline>
+            <source src="assets/videos/banner-video-two.webm" type="video/webm" />
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="hero__container">
+            <h1 class="font-masvis text-center" style="font-size: 50px;">The Art of Perfumery Perfected</h1>
+            <p class="font-sans text-lg text-center" style="max-width: 780px;">
+                Experience the allure of designer scents with our crafted perfumes that 
+                offer the same captivating aromas to match the originals.
+            </p>
+            <button class="bg-light-to-accent fg-dark-to-light px-3 py-1 rounded text-base">
+                SHOP NOW
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Popular Scents -->
+    <div class="container" style="padding: 50px 0px;">
+        <h2 class="font-masvis text-center fg-dark">Popular Scents</h2>
+        <div class="carousel" style="padding: 45px 20px;" data-visible-cards="7">
+            <button 
+                class="carousel__button carousel__button--center carousel__button--left" 
+                onclick="moveLeft(this)">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none"
+                    stroke="currentColor" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-chevron-left">
+                    <path d="m15 18-6-6 6-6"/>
+                </svg>
+            </button>
+            <div class="carousel__track__container">
+                <div class="carousel__track" id="scents-carousel">
+                </div>
+            </div>
+            <button 
+                class="carousel__button carousel__button--center carousel__button--right" 
+                onclick="moveRight(this)">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" stroke-width="2" 
+                    stroke-linecap="round" stroke-linejoin="round" 
+                    class="lucide lucide-chevron-right">
+                    <path d="m9 18 6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="flex items-center justify-center">
+            <a href="#" class="text-base font-sans text-center semibold fg-accent underline">
+                View All
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Banner 3 -->
+    <div class="relative h-screen" style="overflow: hidden;">
+        <video class="absolute w-full" autoplay loop muted playsinline>
+            <source src="assets/videos/banner-video-three.webm" type="video/webm" />
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="hero__container">
+            <h1 class="font-masvis text-center" style="font-size: 50px;">The Premium Oudh Collection</h1>
+            <p class="font-sans text-lg text-center" style="max-width: 780px;">
+                Experience the allure of designer scents with our crafted perfumes that 
+                offer the same captivating aromas to match the originals.
+            </p>
+            <button class="bg-light-to-accent fg-dark-to-light px-3 py-1 rounded text-base">
+                SHOP NOW
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Oudh Collection -->
+    <div class="w-full">
+        <div class="container" style="padding-top: 50px;">
+            <div class="carousel" style="padding: 45px 20px;" data-visible-cards="4">
+                <button 
+                    class="carousel__button carousel__button--offset carousel__button--left" 
+                    onclick="moveLeft(this)">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
+                        stroke="currentColor" stroke-width="2" 
+                        stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-chevron-left">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel__track__container">
+                    <div class="carousel__track" id="oudh-carousel">
+                    </div>
+                </div>
+                <button 
+                    class="carousel__button carousel__button--offset carousel__button--right" 
+                    onclick="moveRight(this)">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        width="24" height="24" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" stroke-width="2" 
+                        stroke-linecap="round" stroke-linejoin="round" 
+                        class="lucide lucide-chevron-right">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex justify-center"style="padding-bottom: 45px;">
+                <button class="bg-accent fg-light px-1 py-1 rounded text-base">
+                    EXPLORE MORE
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Blogs Section -->
+    <div class="bg-light w-full">
+        <div class="container" style="padding: 50px 0px;">
+            <h2 class="fg-dark text-center font-open-sans">Blogs</h2>
+            <div class="blogs__grid" style="padding-top: 45px;">
+                <div> 
+                    <h2 class="font-open-sans">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit</h2>
+                    <p class="font-sans text-md" style="margin-top: 10px;">August 26, 2024</p>
+                    <p class="font-sans text-md" style="margin-top: 40px;">Vivamus ultrices consequat consequat.
+                        Maecenas semper massa ac lorem
+                        rhoncus, nec mattis nisl porttitor.</p>
+                    <div style="padding-top: 40px;">
+                        <a href="#" class="underline font-sans semibold" >
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+                <div> 
+                    <h2 class="font-open-sans">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit</h2>
+                    <p class="font-sans text-md" style="margin-top: 10px;">August 26, 2024</p>
+                    <p class="font-sans text-md" style="margin-top: 40px;">Vivamus ultrices consequat consequat.
+                        Maecenas semper massa ac lorem
+                        rhoncus, nec mattis nisl porttitor.</p>
+                    <div style="padding-top: 40px;">
+                        <a href="#" class="underline font-sans semibold" >
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+                <div> 
+                    <h2 class="font-open-sans">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit</h2>
+                    <p class="font-sans text-md" style="margin-top: 10px;">August 26, 2024</p>
+                    <p class="font-sans text-md" style="margin-top: 40px;">Vivamus ultrices consequat consequat.
+                        Maecenas semper massa ac lorem
+                        rhoncus, nec mattis nisl porttitor.</p>
+                    <div style="padding-top: 40px;">
+                        <a href="#" class="underline font-sans semibold" >
+                            READ MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/carousel.js" defer></script>
+    <script src="./scripts/popular.js" defer></script>
+    <script src="./scripts/products.js" defer></script>
+</body>
+</html>
