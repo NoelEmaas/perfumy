@@ -15,7 +15,7 @@ function populatePopularCarousel(data, carousel) {
             ? `scent-${item}.png`
             : `popular-bg.png`;
 
-        card.style.backgroundImage = `url('assets/images/${imageName}')`;
+        card.style.backgroundImage = `url('./assets/images/${imageName}')`;
         card.style.backgroundSize = 'cover';
         card.style.position = 'relative';
         
