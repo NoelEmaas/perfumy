@@ -105,7 +105,7 @@
 
 @font-face {
     font-family: 'Masvis';
-    src: url('/assets/fonts/Masvis.woff') format('woff');
+    src: url('assets/fonts/Masvis.woff') format('woff');
     font-display: swap;
     font-style: normal;
 }

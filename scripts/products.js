@@ -100,7 +100,7 @@ function populateProducCarousel(data, carousel) {
             : `arrival-bg.png`;
 
         const cardImage = document.createElement('div');
-        cardImage.style.backgroundImage = `url('/assets/images/${imageName}')`;
+        cardImage.style.backgroundImage = `url('assets/images/${imageName}')`;
         cardImage.style.backgroundSize = 'cover';
         cardImage.style.position = 'relative';
         cardImage.style.height = '250px';
